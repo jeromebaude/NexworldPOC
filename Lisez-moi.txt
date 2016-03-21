@@ -1,0 +1,20 @@
+Ce projet inclue deux POCs :
+- Un POC J2EE Spring MVC/Hibernate buildé avec Maven. Il inclue une connexion vers une base PostgreSQL, une interface d'admin basique en JSP et des services REST pour lire les objets créés
+- Un POC Angular/JQuery buildé avec brunch (et npm pour les dépendances). Il affiche les objets retournés par le premier POC. Il est dans src/main/js/
+
+
+POC Java :
+Projet java mavenisé classique, marche dans Eclipse sans config particulière
+
+
+POC JS :
+- installer node.js puis brunch (npm install -g brunch)
+- "npm install" puis "brunch build" dans src/main/js/. Déploie les fichiers générés dans src/main/webapp/resources/js
+- "brunch watch" (dans src/main/js/) mets à jour la version compilée en continue dans src/main/webapp/resources/js/.
+
+
+Intégration des deux
+- Le projet java package les fichiers JS générés par brunch et les rends dispo sur le serveur sur resources/js/
+- Si le projet java est lançé dans Eclipse et déployé sur un Tomcat, Eclipse mets à jour le Tomcat à partir de la sortie brunch automatiquement. Il suffit donc de laisser tourner "brunch watch" pour avoir les JS à jour sur Tomcat
+- Pour builder les deux à la fois: "mvn clean exec:exec@npminstall exec:exec@brunchbuild install"  
+ 
