@@ -8,12 +8,12 @@
 	<distributionManagement>
 		<repository>
 			<id>nexus</id>
-			<url>http://svlinde002:8081/nexus/content/repositories/releases/</url>
+			<url>http://localhost:8081/nexus/content/repositories/SimpleProject/</url>
 		</repository>
 	</distributionManagement>
 	<scm>
-		<connection>scm:git:http://svlinde002:7990/scm/poc/javajs.git</connection>
-		<developerConnection>scm:git:http://svlinde002:7990/scm/poc/javajs.git</developerConnection>
+		<connection>scm:git:ssh://git@localhost:/home/git/repos/SimpleProject</connection>
+		<developerConnection>scm:git:ssh://git@localhost:/home/git/repos/SimpleProject</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	<properties>
