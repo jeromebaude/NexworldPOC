@@ -17,7 +17,7 @@
  
  
 <body>
-	<img src="resources/images/elis.jpg" style="float: left;"/>
+	<img src="resources/images/logoNexworld-300x65.png" style="float: left;"/>
     <h2>Liste des sites</h2>  
     <table>
         <tr>

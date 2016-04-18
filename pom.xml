@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.elis.pic</groupId>
-	<artifactId>elispoc</artifactId>
+	<groupId>com.Nexworld.pic</groupId>
+	<artifactId>Nexworldpoc</artifactId>
 	<version>0.0.7-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Elis Poc</name>
+	<name>Nexworld Poc</name>
 	<distributionManagement>
 		<repository>
 			<id>nexus</id>
@@ -162,7 +162,7 @@
 					<version>2.4</version>
 					<configuration>
 						<warSourceDirectory>src/main/webapp</warSourceDirectory>
-						<warName>Elis POC</warName>
+						<warName>Nexworld POC</warName>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
 					</configuration>
 				</plugin>
@@ -204,6 +204,6 @@
 			</plugins>
 
 		</pluginManagement>
-		<finalName>ElisPoc</finalName>
+		<finalName>NexworldPoc</finalName>
 	</build>
 </project>
